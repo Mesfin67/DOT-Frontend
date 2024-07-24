@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-website</title>
+    <style>
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        text-align: right;
+        font-weight: bold;
+        font-size: large;
+        background-color: rgb(126, 126, 230);
+        height: 43px;
+        padding-top: 18px;
+      }
+
+      h1,
+      h2,
+      p {
+        text-align: center;
+      }
+      a {
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+      }
+      img {
+        text-align: left;
+        margin-top: 0;
+        padding-top: 0;
+        height: 300px;
+      }
+      footer {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(126, 126, 230);
+        text-align: center;
+        bottom: 0;
+        position: absolute;
+        line-height: 40px;
+      }
+
+      footer > p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to My Website</h1>
+      <p>This is the homepage.</p>
+
+      <div style="text-align: center">
+        <img src="Images/png-image.png" alt="image" style="margin: auto" />
+      </div>
+    </main>
+    <h2>Previous projects</h2>
+    <ul>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2024 My Website</p>
+    </footer>
+  </body>
+</html>
