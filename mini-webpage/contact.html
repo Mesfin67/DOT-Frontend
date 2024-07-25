@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mini-website</title>
+    <style>
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: rgb(126, 126, 230);
+        font-size: large;
+        font-weight: bold;
+        height: 43px;
+        padding-top: 18px;
+        text-align: right;
+      }
+
+      nav {
+        padding: 10px;
+      }
+      h1,
+      p {
+        text-align: center;
+      }
+      a {
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+      }
+
+      footer {
+        background-color: rgb(126, 126, 230);
+        bottom: 0;
+        color: white;
+        height: 50px;
+        line-height: 40px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Me</h1>
+      <p>This is the contact page.</p>
+      <p>
+        Enjoy listening to the audio : <br />
+        <audio controls>
+          <source src="audio/drumloop.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2024 My Website</p>
+    </footer>
+  </body>
+</html>

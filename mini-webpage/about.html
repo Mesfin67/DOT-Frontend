@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mini-website</title>
+    <style>
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        text-align: right;
+        font-weight: bold;
+        font-size: large;
+        background-color: rgb(126, 126, 230);
+        height: 43px;
+        padding-top: 18px;
+      }
+
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+
+      nav {
+        padding: 10px;
+      }
+      h1,
+      p {
+        text-align: center;
+      }
+      a {
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+      }
+     
+      footer {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(126, 126, 230);
+        text-align: center;
+        bottom: 0;
+        position: absolute;
+        line-height: 40px;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>More About Me</h1>
+      <p>This is About Me page. <br>
+        <video width="400px" controls aotoplay muted>
+            <source src="video/sample.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </main></p>
+    <footer>
+      <p>&copy; 2024 My Website</p>
+    </footer>
+  </body>
+</html>
