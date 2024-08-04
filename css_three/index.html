@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Style and Layout</title>
+    <style>
+      /* General Reset and Box Sizing */
+      * {
+        box-sizing: border-box;
+       
+      }
+
+      /* Flex container for label texts */
+      .label-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+      }
+
+      /* Styling for label text elements */
+      .label-text {
+        color: black;
+        font-weight: 600;
+        margin-right: 80px;
+      }
+
+      /* Flex container to align items side by side */
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px; /* Gap between flex items */
+      }
+
+      /* Container with yellow background */
+      .content-container {
+        background-color: yellow;
+        display: inline-block;
+        width: 70vw;
+        padding: 10px;
+      }
+
+      /* Styling for anchor tags */
+      a {
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      /* Styling for the primary link */
+      .primary-link {
+        background-color: #2c8000;
+        color: white;
+        margin: 11px;
+        padding: 10px 20px;
+      }
+
+      /* Styling for the secondary link */
+      .secondary-link {
+        border: 3px solid #2c8000;
+        color: black;
+        margin: 11px;
+        padding: 10px 20px;
+      }
+
+      /* Base styling for all links */
+      .link {
+        font-size: larger;
+        display: inline-block;
+        text-align: center;
+      }
+
+      /* Styling for unordered lists with blue square bullets */
+      ul {
+        list-style: none; /* Remove default bullets */
+        padding-left: 20px;
+        margin-top: 1rem;
+      }
+      ul li::before {
+        content: '■'; /* Unicode for filled square */
+        color: #f78d16; /* Color for the square */
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        margin-right: 0.5em;
+      }
+
+      /* Paragraph and heading styling */
+      p, h1 {
+        padding-left: 7px;
+        margin-top: 1rem;
+      }
+
+      /* Margin for content wrapper */
+      .content-wrapper {
+        margin-bottom: 80px;
+      }
+
+      /* Styling for a box with a yellow background and absolute positioning */
+      .absolute-box {
+        background-color: #f9c50d;
+        height: 100px;
+        width: 80px;
+        position: absolute;
+        z-index: -1;
+      }
+
+      /* Inline-block and block display styling */
+      .box {
+        background-color: yellow;
+        border: 1px solid blue;
+        height: 80px;
+        padding-left: 5px;
+        width: 80px;
+        margin-right: 5px;
+      }
+
+      .inline-box {
+        display: inline-block;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (max-width: 768px) {
+        .content-container {
+          width: 100%;
+        }
+
+        .link {
+          font-size: medium;
+          margin: 5px;
+        }
+
+        .primary-link,
+        .secondary-link {
+          padding: 8px 15px;
+        }
+
+        .content-wrapper {
+          margin-bottom: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .link {
+          font-size: small;
+          margin: 3px;
+        }
+
+        .box,
+        .absolute-box {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section for Label Texts -->
+    <section class="label-container">
+      <span class="label-text">Before hover</span>
+      <span class="label-text">After hover</span>
+    </section>
+
+    <!-- Flex Container for Links and Content Container -->
+    <div class="flex-container">
+      <!-- Links Section -->
+      <section>
+        <a class="primary-link link" href="#">This is a link</a>
+        <a class="secondary-link link" href="#">This is a link</a>
+      </section>
+
+      <!-- Content Container -->
+      <section class="content-container content-wrapper">
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Content Wrapper with Absolute Positioned Box -->
+    <section class="content-wrapper">
+      <div class="absolute-box"></div>
+      <h1>This is a heading</h1>
+      <p>Because the image has z-index of -1, it will be placed behind the text.</p>
+    </section>
+
+    <!-- Display Property Examples -->
+    <section>
+      <h2>The display Property</h2>
+
+      <!-- Inline display example -->
+      <h4>display: inline</h4>
+      <p>
+        this is text, this is text, this is text 
+        <span class="box">hello</span> 
+        <span class="box">there</span></span> 
+        this is text, this is text, this is text
+      </p>
+
+      <!-- Inline-block display example -->
+      <h4>display: inline-block</h4>
+      <p>
+        this is text, this is text, this is text 
+        <span class="inline-box box">hello</span>
+        <span class="inline-box box">there</span> 
+        this is text, this is text, this is text
+      </p>
+
+      <!-- Block display example -->
+      <h4>display: block</h4>
+      <p>
+        this is text, this is text, this is text 
+        <div class="box">hello</div>
+        <div class="box">there</div> 
+        this is text, this is text, this is text
+      </p>
+    </section>
+  </body>
+</html>
