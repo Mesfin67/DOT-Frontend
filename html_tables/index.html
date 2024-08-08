@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tables</title>
+      <style>
+         body, html {
+         height: 100%;
+         width: 100%;
+         }
+         h2{
+         margin-top: 25px;
+         }
+         .tab{
+         border-collapse: collapse;
+         margin-bottom: 25px;
+         margin-left: 45px;
+         width: 90%; 
+         }
+         .tab3{
+         border: 1px solid black;
+         margin-bottom: 25px;
+         margin-left: 45px;
+         padding: 1px;
+         width: 90%; 
+         }
+         table, th, td {
+         
+         border: 2px solid black;
+         padding: 8px;
+         text-align: left;
+         white-space: nowrap;
+        }
+         .image_cell{
+           
+            height: 300px;
+            width: 400px;
+         }
+         .text-center {
+         text-align: center;
+         }
+         .text-left {
+         text-align: left;
+         }
+         .text-right {
+         text-align: right;
+         }
+      </style>
+   </head>
+   <body>
+      <h2 class="text-center">HTML Assignment #3</h2>
+      <table class="tab" >
+         <td class="text-left">left</td>
+         <td class="text-center">center</td>
+         <td class="text-right">right</td>
+         </tr>
+         <tr>
+            <td class="text-left">left</td>
+            <td class="text-center">center</td>
+            <td class="text-right">right</td>
+         </tr>
+         <tr>
+            <td class="text-left">left</td>
+            <td class="text-center">center</td>
+            <td class="text-right">right</td>
+      </table>
+      <table class="tab">
+         <tr >
+            <td colspan="6"></td>
+         </tr>
+         <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="3" rowspan="2"></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td colspan="6"></td>
+         </tr>
+      </table>
+      <table class="tab">
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td rowspan="4"></td>
+         </tr>
+         <tr>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+      </table>
+      <table class="tab3">
+         <tr>
+            <td colspan="3" ></td>
+         </tr>
+         <tr>
+            <td ></td>
+            <td class="image_cell"> <img src="webp-image.webp" alt=""></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td   colspan="3" ></td>
+         </tr>
+      </table>
+      </table>
+      <div class="text-center">
+         <footer>Created by: Mesfin Bebulo</footer>
+         <time datetime="7-21-2024"> 22 july 2024 </time>
+      </div>
+   </body>
+</html>
