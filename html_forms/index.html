@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+    <style>
+      input,
+      textarea {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basic form design using HTML</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fname">First name :</label>
+        <input type="text" id="fname" /> <br />
+        <label for="lname">Last name :</label>
+        <input type="text" id="lname" /> <br />
+        <label for="sex">Gender :</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br />
+        <label for="email">Email :</label>
+        <input type="email" /> <br />
+        <label for="date">Date of Birth :</label>
+        <input type="date" id="date" /> <br />
+        <label for="address">Address :</label><br />
+        <textarea name="" id="address" rows="3" cols="30"> </textarea> <br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
