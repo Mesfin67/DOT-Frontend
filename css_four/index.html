@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign In Page</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <label for="fname">First Name</label><br />
+        <input
+          type="text"
+          id="fname"
+          placeholder="Your name.."
+          class="input-field"
+        /><br />
+        <label for="lname">Last Name</label><br />
+        <input
+          type="text"
+          id="lname"
+          placeholder="Your last name.."
+          class="input-field"
+        /><br />
+        <label for="country">Country</label><br />
+        <select id="country" name="country" class="input-field dropdown-select">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">United States</option></select
+        ><br />
+        <button type="submit" class="input-field submit-button">Submit</button>
+      </form>
+    </div>
+    <div class="dropdown-container">
+      <button class="dropdown-button">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </body>
+</html>
