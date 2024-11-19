@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript Loops</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Program 1: Leap Year -->
+      <div class="program" id="program1">
+        <h2>1. Check if a Year is a Leap Year</h2>
+        <label for="leapYearInput">Enter a Year:</label>
+        <input type="number" id="leapYearInput" placeholder="e.g., 2024" />
+        <button onclick="checkLeapYear()">Check</button>
+        <div class="result" id="leapYearResult"></div>
+      </div>
+
+      <!-- Program 2: Check 1st January Sunday -->
+      <div class="program" id="program2">
+        <h2>2. Check if 1st January is Sunday (2014-2050)</h2>
+        <button onclick="checkFirstJanuarySunday()">Find Years</button>
+        <div class="result" id="firstJanuaryResult"></div>
+      </div>
+
+      <!-- Program 3: Odd or Even -->
+      <div class="program" id="program3">
+        <h2>3. Odd or Even Numbers (0-15)</h2>
+        <button onclick="checkOddEven()">Check Numbers</button>
+        <div class="result" id="oddEvenResult"></div>
+      </div>
+
+      <!-- Program 4: Palindrome Check -->
+      <div class="program" id="program4">
+        <h2>4. Check if a String is a Palindrome</h2>
+        <label for="palindromeInput">Enter a String:</label>
+        <input type="text" id="palindromeInput" placeholder="e.g., madam" />
+        <button onclick="checkPalindrome()">Check</button>
+        <div class="result" id="palindromeResult"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .program {
+    background: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .program h2 {
+    font-size: 1.2em;
+    color: #555;
+  }
+  .program label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .program input,
+  .program button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+  }
+  .program button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  .program button:hover {
+    background-color: #0056b3;
+  }
+  .result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
