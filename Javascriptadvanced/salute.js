@@ -7,5 +7,4 @@ async function salute() {
   await delay(2000);
   console.log("World");
 }
-// Call the async function
 salute();
