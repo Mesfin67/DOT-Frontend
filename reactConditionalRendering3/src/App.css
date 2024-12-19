@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #d882dc, #7332dc, #3c6ce6);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease infinite;
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  h2 {
+    color: #343a40;
+    margin-bottom: 16px;
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid #6b60a2;
+    border-radius: 4px;
+    padding: 20px 40px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 12px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4f7ba9;
+  }
+  
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  p {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .dashboard {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard h2 {
+    color: #28a745;
+  }
+  
