@@ -1,0 +1,40 @@
+.user-list {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+
+.user-card {
+  margin-bottom: 15px;
+  padding: 80px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.user-card p {
+  margin: 5px 0;
+}
+
+.edit-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #00ff48;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #65b300;
+}
